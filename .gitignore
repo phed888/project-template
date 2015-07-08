@@ -1,0 +1,4 @@
+source/styles/scss/.sass-cache/**
+.codekit-cache
+config.codekit
+.idea/**

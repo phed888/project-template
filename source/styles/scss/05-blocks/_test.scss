@@ -19,7 +19,7 @@
 
 #wrapper {
 	@include clearfix;
-	//overflow: hidden;
+	overflow: hidden;
 	.left-column, .right-column {
 		float: left;
 	}

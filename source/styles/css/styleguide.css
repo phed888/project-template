@@ -11,9 +11,35 @@
     src: url("../../fonts/norwester.svg#norwester") format("svg");
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .font-test {
   color: #e0e0e0;
+  cursor: pointer;
   font-family: 'norwester';
-  font-size: 90px;
-  letter-spacing: -2px;
+  font-size: 200px;
+  line-height: 160px;
+}
+.font-test.exp {
+  color: yellow;
+}
+
+.holder {
+  height: 500px;
+  cursor: pointer;
+}
+.holder.exp {
+  background-color: yellow;
+}
+
+#wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#wrapper .left-column, #wrapper .right-column {
+  float: left;
 }

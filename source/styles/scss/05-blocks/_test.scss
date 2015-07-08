@@ -1,0 +1,27 @@
+.font-test {
+	color: #e0e0e0;
+	cursor: pointer;
+	font-family: 'norwester';
+	font-size: 200px;
+	line-height: 160px;
+	&.exp {
+		color: yellow;
+	}
+}
+
+.holder {
+	height: 500px;
+	cursor: pointer;
+	&.exp {
+		background-color: yellow;
+	}
+}
+
+#wrapper {
+	@include clearfix;
+	//overflow: hidden;
+	.left-column, .right-column {
+		float: left;
+	}
+
+}

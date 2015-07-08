@@ -1,19 +1,35 @@
 $(document).ready(function() {
-	var browserWidth = $(window).width();
-	$('.left-column').css('width', browserWidth);
-	$('.right-column').css('width', browserWidth);
-	$('#wrapper').css('width', browserWidth*2.05);
+	var browserWidth;
+	var leftColumnPadding = 0;
+	var rightColumnPadding = 0;
+	var leftColumnReturnButton = 40;
+	var wrapper = $('#wrapper');
+
+	function setContentWidth() {
+		browserWidth = $(window).width();
+		$('.left-column').css('width', browserWidth - leftColumnPadding + leftColumnReturnButton);
+		$('.right-column').css('width', browserWidth - rightColumnPadding - leftColumnReturnButton);
+		wrapper.css('width', browserWidth + browserWidth + leftColumnReturnButton + 10);
+	}
+
+	setContentWidth();
+
+	$(window).resize(function() {
+		setContentWidth();
+	});
+
 	$('.font-test').click(function() {
 		$(this).next('.holder').slideToggle();
 	});
 	$('.holder').click(function() {
-		$('#wrapper').animate({
-			marginLeft: "-=" + browserWidth
-		}, 500);
-	});
-	$('.right-column').click(function() {
-		$('#wrapper').animate({
-			marginLeft: "+=" + browserWidth
-		}, 500);
+		if(wrapper.css('margin-left') === '0px') {
+			wrapper.animate({
+				marginLeft: "-=" + browserWidth
+			}, 500);
+		} else {
+			wrapper.animate({
+				marginLeft: 0
+			}, 500);
+		}
 	});
 });

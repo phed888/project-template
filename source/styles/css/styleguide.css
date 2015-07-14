@@ -11,6 +11,46 @@
     src: url("../../fonts/norwester.svg#norwester") format("svg");
   }
 }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,22 +60,17 @@ body {
 }
 
 .font-test {
-  color: #e0e0e0;
+  color: #ccc;
   cursor: pointer;
   font-family: 'norwester';
   font-size: 200px;
   line-height: 160px;
 }
-.font-test.exp {
-  color: yellow;
+.font-test.active {
+  color: #999;
 }
-
-.holder {
-  height: 500px;
-  cursor: pointer;
-}
-.holder.exp {
-  background-color: yellow;
+.font-test:hover {
+  color: #999;
 }
 
 #wrapper {
@@ -51,4 +86,38 @@ body {
 }
 #wrapper .right-column {
   padding: 40px;
+}
+
+.holder {
+  height: 500px;
+  cursor: pointer;
+  padding: 40px 80px 40px;
+}
+.holder.exp {
+  background-color: #999;
+}
+
+.project-list {
+  border-bottom: 1px solid white;
+}
+
+.project {
+  border-top: 1px solid white;
+  padding: 20px;
+}
+.project::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.project .project-image, .project .project-details {
+  float: left;
+}
+.project .project-image {
+  height: 135px;
+  margin-right: 20px;
+  width: 240px;
+}
+.project .project-image.one {
+  background-image: url("/source/images/img-1.png");
 }

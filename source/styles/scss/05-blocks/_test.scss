@@ -1,21 +1,18 @@
 .font-test {
-	color: #e0e0e0;
+	color: $nav;
 	cursor: pointer;
 	font-family: 'norwester';
 	font-size: 200px;
 	line-height: 160px;
-	&.exp {
-		color: yellow;
+	&.active {
+		color: $nav-active;
+	}
+	&:hover {
+		color: $nav-active;
 	}
 }
 
-.holder {
-	height: 500px;
-	cursor: pointer;
-	&.exp {
-		background-color: yellow;
-	}
-}
+
 
 #wrapper {
 	@include clearfix;
@@ -27,4 +24,34 @@
 		padding: 40px;
 	}
 
+}
+
+.holder {
+	height: 500px;
+	cursor: pointer;
+	padding: 40px 80px 40px;
+	&.exp {
+		background-color: $nav-active;
+	}
+}
+
+.project-list {
+	border-bottom: 1px solid white;
+}
+
+.project {
+	@include clearfix;
+	border-top: 1px solid white;
+	padding: 20px;
+	.project-image, .project-details {
+		float: left;
+	}
+	.project-image {
+		height: 135px;
+		margin-right: 20px;
+		width: 240px;
+		&.one {
+			background-image: url("/source/images/img-1.png");
+		}
+	}
 }

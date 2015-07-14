@@ -11,6 +11,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/source\/images\/img-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1484,
+		"inputAbbreviatedPath": "\/source\/images\/img-1.png",
+		"outputAbbreviatedPath": "\/source\/images\/img-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/source\/images\/img-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2180,
+		"inputAbbreviatedPath": "\/source\/images\/img-2.png",
+		"outputAbbreviatedPath": "\/source\/images\/img-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/source\/images\/img-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2292,
+		"inputAbbreviatedPath": "\/source\/images\/img-3.png",
+		"outputAbbreviatedPath": "\/source\/images\/img-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/source\/js\/app.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -80,6 +113,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/source\/styles\/scss\/01-variables\/_colors.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/styles\/scss\/01-variables\/_colors.scss",
+		"outputAbbreviatedPath": "\/source\/styles\/scss\/css\/_colors.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/source\/styles\/scss\/02-mixins\/_all.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -121,6 +170,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/styles\/scss\/02-mixins\/_fonts.scss",
 		"outputAbbreviatedPath": "\/source\/styles\/scss\/css\/_fonts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/source\/styles\/scss\/02-mixins\/_meyer-reset.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/styles\/scss\/02-mixins\/_meyer-reset.scss",
+		"outputAbbreviatedPath": "\/source\/styles\/scss\/css\/_meyer-reset.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

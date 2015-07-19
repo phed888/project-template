@@ -121,3 +121,83 @@ body {
 .project .project-image.one {
   background-image: url("/source/images/img-1.png");
 }
+
+.call-out-list {
+  counter-reset: call-outs;
+}
+.call-out-list .call-out {
+  position: relative;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.call-out-list .call-out .item-number {
+  margin-right: 10px;
+  position: relative;
+}
+.call-out-list .call-out .item-number:before {
+  border: 15px solid #6666ff;
+  border-radius: 15px;
+  content: ' ';
+  font-size: 0;
+  height: 0;
+  width: 0;
+}
+.call-out-list .call-out .item-number:after {
+  color: #fff;
+  counter-increment: call-outs;
+  content: counter(call-outs);
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  left: 11px;
+  top: 7px;
+}
+.call-out-list .call-out .item {
+  position: relative;
+  top: 5px;
+}
+.call-out-list .call-out .call-out-pointer {
+  display: inline-block;
+  position: relative;
+}
+.call-out-list .call-out .call-out-pointer.top, .call-out-list .call-out .call-out-pointer.right, .call-out-list .call-out .call-out-pointer.bottom, .call-out-list .call-out .call-out-pointer.left {
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+}
+.call-out-list .call-out .call-out-pointer.top:before, .call-out-list .call-out .call-out-pointer.right:before, .call-out-list .call-out .call-out-pointer.bottom:before, .call-out-list .call-out .call-out-pointer.left:before {
+  border: 15px solid #6666ff;
+  border-radius: 15px;
+  content: ' ';
+  font-size: 0;
+  height: 0;
+  width: 0;
+}
+.call-out-list .call-out .call-out-pointer.top:after, .call-out-list .call-out .call-out-pointer.right:after, .call-out-list .call-out .call-out-pointer.bottom:after, .call-out-list .call-out .call-out-pointer.left:after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  color: #fff;
+  content: counter(call-outs);
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  left: 11px;
+  top: 7px;
+}
+.call-out-list .call-out .call-out-pointer.top:before {
+  border-top-right-radius: 0;
+}
+.call-out-list .call-out .call-out-pointer.right:before {
+  border-bottom-right-radius: 0;
+}
+.call-out-list .call-out .call-out-pointer.bottom:before {
+  border-bottom-left-radius: 0;
+}
+.call-out-list .call-out .call-out-pointer.left:before {
+  border-top-left-radius: 0;
+}

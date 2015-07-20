@@ -44,6 +44,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/source\/images\/test-screen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3131,
+		"inputAbbreviatedPath": "\/source\/images\/test-screen.png",
+		"outputAbbreviatedPath": "\/source\/images\/test-screen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/source\/js\/app.js": {
 		"fileType": 64,
 		"ignore": 0,

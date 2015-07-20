@@ -59,6 +59,15 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  border-bottom: 1px dotted #999;
+  font-family: 'norwester';
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
 .font-test {
   color: #ccc;
   cursor: pointer;
@@ -122,13 +131,32 @@ body {
   background-image: url("/source/images/img-1.png");
 }
 
+section {
+  position: relative;
+}
+
+.screen-description {
+  width: 960px;
+}
+.screen-description::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.description, .call-out-list {
+  float: left;
+  width: 60%;
+}
+
 .call-out-list {
   counter-reset: call-outs;
+  width: 40%;
 }
 .call-out-list .call-out {
-  position: relative;
+  cursor: pointer;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .call-out-list .call-out .item-number {
   margin-right: 10px;
@@ -153,12 +181,13 @@ body {
   top: 7px;
 }
 .call-out-list .call-out .item {
+  font-size: 12px;
   position: relative;
   top: 5px;
 }
 .call-out-list .call-out .call-out-pointer {
   display: inline-block;
-  position: relative;
+  position: absolute;
 }
 .call-out-list .call-out .call-out-pointer.top, .call-out-list .call-out .call-out-pointer.right, .call-out-list .call-out .call-out-pointer.bottom, .call-out-list .call-out .call-out-pointer.left {
   transform: rotate(315deg);
@@ -200,4 +229,7 @@ body {
 }
 .call-out-list .call-out .call-out-pointer.left:before {
   border-top-left-radius: 0;
+}
+.call-out-list .call-out:hover .item-number:before, .call-out-list .call-out:hover .call-out-pointer:before {
+  border-color: red;
 }

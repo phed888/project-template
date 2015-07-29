@@ -1,1 +1,1 @@
-$(document).ready(function(){function i(){n=$(window).width(),$(".left-column").css("width",n-t+c),$(".right-column").css("width",n-e-c),o.css("width",n+n+c+100)}var n,t=0,e=40,c=40,o=$("#wrapper");i(),$(window).resize(function(){i()}),$(".font-test").click(function(){$(this).next(".holder").slideToggle()}),$(".holder").click(function(){"0px"===o.css("margin-left")?o.animate({marginLeft:"-="+n},500):o.animate({marginLeft:0},500)})});
+$(document).ready(function(){var r,a=0,e=40,n=40,c=$("#wrapper")});

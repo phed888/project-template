@@ -4,67 +4,76 @@
 	<meta charset="UTF-8">
 	<title>Test</title>
 	<link rel="stylesheet" href="source/styles/css/styleguide.css"/>
+	<script>
+		// init controller
+		var controller = new ScrollMagic.Controller();
+	</script>
 </head>
 <body>
 	<div id="wrapper">
-		<div class="left-column">
-			<div class="font-test exp">exp</div>
-			<div class="holder exp">
-				<ul class="project-list">
-					<li class="project">
-						<div class="project-image one"></div>
-						<div class="project-details one"></div>
-					</li>
-					<li class="project">
+		<!--<div class="left-column">-->
+			<!--<div class="font-test exp">exp</div>-->
+			<!--<div class="holder exp">-->
+				<!--<ul class="project-list">-->
+					<!--<li class="project">-->
+						<!--<div class="project-image one"></div>-->
+						<!--<div class="project-details one"></div>-->
+					<!--</li>-->
+					<!--<li class="project">-->
 
-					</li>
-					<li class="project">
+					<!--</li>-->
+					<!--<li class="project">-->
 
-					</li>
-				</ul>
-			</div>
-			<div class="font-test">asc</div>
-			<div class="font-test">zaz</div>
-			<div class="font-test">rnw</div>
-		</div>
+					<!--</li>-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!--<div class="font-test">asc</div>-->
+			<!--<div class="font-test">zaz</div>-->
+			<!--<div class="font-test">rnw</div>-->
+		<!--</div>-->
 		<div class="right-column">
 			<section>
 				<div class="screenshot">
 					<img src="source/images/test-screen.png" alt=""/>
 				</div>
-				<div class="screen-description">
-					<h1>Title of this area</h1>
-					<div class="description">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cupiditate, debitis dolore dolorem ex fuga fugiat incidunt iusto libero nihil nobis nostrum nulla pariatur quo repellat reprehenderit saepe sapiente voluptas.</p>
-					</div>
-					<ul class="call-out-list">
-						<li class="call-out">
-							<span class="item-number"></span>
-							<span class="item">Text goes here</span>
-							<div class="call-out-pointer right" style="left: 48px; top: 106px;"></div>
-						</li>
-						<li class="call-out">
-							<span class="item-number"></span>
-							<span class="item">Text goes here</span>
-							<div class="call-out-pointer top" style="left: 720px; top: 128px;"></div>
-						</li>
-						<li class="call-out">
-							<span class="item-number"></span>
-							<span class="item">Text goes here</span>
-							<div class="call-out-pointer bottom" style="left: 434px; top: 226px;"></div>
-						</li>
-						<li class="call-out">
-							<span class="item-number"></span>
-							<span class="item">Text goes here</span>
-							<div class="call-out-pointer left" style="left: 189px; top: 369px;"></div>
-						</li>
-					</ul>
-				</div>
+				<ul class="call-out-list">
+					<li class="call-out">
+						<span class="item-number"></span>
+						<span class="item">Text goes here</span>
+						<div class="call-out-pointer right" style="left: 0px; top: 0px;"></div>
+					</li>
+					<li class="call-out">
+						<span class="item-number"></span>
+						<span class="item">Text goes here</span>
+						<div class="call-out-pointer top" style="left: 720px; top: 128px;"></div>
+					</li>
+					<li class="call-out">
+						<span class="item-number"></span>
+						<span class="item">Text goes here</span>
+						<div class="call-out-pointer bottom" style="left: 434px; top: 226px;"></div>
+					</li>
+					<li class="call-out">
+						<span class="item-number"></span>
+						<span class="item">Text goes here</span>
+						<div class="call-out-pointer left" style="left: 189px; top: 369px;"></div>
+					</li>
+				</ul>
+				<!--<div class="screen-description">-->
+					<!--<h1>Title of this area</h1>-->
+					<!--<div class="description">-->
+						<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, cupiditate, debitis dolore dolorem ex fuga fugiat incidunt iusto libero nihil nobis nostrum nulla pariatur quo repellat reprehenderit saepe sapiente voluptas.</p>-->
+					<!--</div>-->
+
+				<!--</div>-->
 			</section>
 		</div>
 	</div>
 	<!--scripts-->
 	<script src="source/js/vendor/jquery-2.1.4.js";></script>
+	<script src="source/js/vendor/scrollMagic/ScrollMagic.js"></script>
+	<script src="source/js/vendor/greensock/TimelineMax.js"></script>
+	<script src="source/js/vendor/greensock/TweenMax.js"></script>
+	<script src="source/js/vendor/greensock/jquery.gsap.js"></script>
 	<script src="source/js/min/app-min.js"></script>
 </body>
 </html>

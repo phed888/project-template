@@ -25,10 +25,10 @@ h1 {
 
 #wrapper {
 	@include clearfix;
-	overflow: hidden;
-	.left-column, .right-column {
-		float: left;
-	}
+	//overflow: hidden;
+	//.left-column, .right-column {
+	//	float: left;
+	//}
 	.right-column {
 		padding: 40px;
 	}
@@ -65,7 +65,12 @@ h1 {
 	}
 }
 section {
+	@include clearfix;
 	position: relative;
+}
+.screenshot {
+	float: left;
+	margin-right: 40px;
 }
 .screen-description {
 	@include clearfix;
@@ -73,21 +78,25 @@ section {
 }
 .description, .call-out-list {
 	float: left;
-	width: 60%;
+	//width: 60%;
 }
 .call-out-list {
 	counter-reset: call-outs;
-	width: 40%;
+	float: left;
+	//width: 40%;
 	.call-out {
+		border-bottom: 1px dotted #999999;
 		cursor: pointer;
 		list-style: none;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
+		padding-bottom: 15px;
+		width: 160px;
 		.item-number {
-			margin-right: 10px;
+			margin-right: 5px;
 			position: relative;
 			&:before {
-				border: $call-out-radius solid $call-out-color;
-				border-radius: $call-out-radius;
+				border: $list-bullet-radius solid $call-out-color;
+				border-radius: $list-bullet-radius;
 				content: ' ';
 				font-size: 0;
 				height: 0;
@@ -97,20 +106,23 @@ section {
 				color: $call-out-number;
 				counter-increment: call-outs;
 				content: counter(call-outs);
-				font-size: 14px;
+				font-size: 11px;
+				font-style: bold;
 				text-align: center;
 				position: absolute;
-				left: 11px;
-				top: 7px;
+				left: 7px;
+				top: 9px;
 			}
 		}
 		.item {
-			font-size: 12px;
+			font-family: Georgia;
+			font-style: italic;
+			font-size: 13px;
 			position: relative;
 			top: 5px;
 		}
 		.call-out-pointer {
-			display: inline-block;
+			display: none;
 			position: absolute;
 			&.top, &.right, &.bottom, &.left {
 				transform: rotate(315deg) ;
@@ -135,17 +147,21 @@ section {
 					-ms-transform: rotate(45deg);
 					color: $call-out-number;
 					content: counter(call-outs);
-					font-size: 14px;
+					font-family: Georgia;
+					font-size: 18px;
+					font-weight: bold;
 					text-align: center;
 					position: absolute;
-					left: 11px;
-					top: 7px;
+					left: 16px;
+					top: 2px;
 				}
 			}
 			&.top {
 				&:before {
 					border-top-right-radius: 0;
 				}
+				left: -5px;
+				top: 10px;
 			}
 			&.right {
 				&:before {
@@ -164,7 +180,9 @@ section {
 			}
 		}
 		&:hover {
+			background-color: yellow;
 			.item-number, .call-out-pointer {
+				display: inline-block;
 				&:before {
 					border-color: red;
 				}
